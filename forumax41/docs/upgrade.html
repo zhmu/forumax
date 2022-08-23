@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+        "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>ForuMAX upgrade</title>
+</head><body bgcolor="#dfdfdf">
+<font size=6>ForuMAX upgrade</font>
+<hr>
+This document will describe how to upgrade ForuMAX.<p>
+
+<b>Upgrading ForuMAX</b><br>
+Upgrading ForuMAX is much easier than installing it. All you have to do is copy all files, <b><u>except forum_options.pl</u></b> from the <code>cgi-bin</code> directory to the cgi-bin directory of the forum. That's it.<p>
+
+<b>Notice</b> If you are upgrading from any version before 4.0 to 4.0, you will also need to do the stuff below:<p>
+
+1) Create an empty file called <code>groups</code> in the internal ForuMAX directory. It must have the same owner and permissions as <code>accounts</code> has.<br>
+2) Edit <code>forum_options.pl</code>, and add the following:<p>
+
+<code>
+$GROUPDB_FILE=qq~<i>Complete directory and filename to your groups file</i>~;<br>
+$GROUPDB_LOCKFILE=qq~<i>Complete directory and filename to your groups file, but add .LOCK to it</i>~;
+</code><p>
+
+When you are in the CP, immediately submit the options, and it'll be fine.<p>
+
+<b>Notice</b> If you are upgrading from 4.0 to 4.1, you will also need to check the <i>Rebuild moderator list</i> checkbox in the Control Panel. This only needs to be done once.<p>
+
+Good luck, and please enjoy ForuMAX!<br>
+The ForuMAX Staff<br>
+<a href="http://www.forumax.com">http://www.forumax.com</a>
+
+</body>

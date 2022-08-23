@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+        "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>ForuMAX installation</title>
+</head><body bgcolor="#dfdfdf">
+<font size=6>ForuMAX installation</font>
+<hr>
+This document will describe how to install ForuMAX.<p>
+
+<b>Create Directories</b><br>
+First of all, you need to create 3 directories. These are:<p>
+
+1) One directory that contains all forum images. This directory must be
+   available to the outside world, by means of an URL. Recommended is to
+   use a name like <code>forum-images</code>.The directory will be used in lines like <code>&lt;img src="<i>URL</i>/forumh.jpg"&gt;</code>. This directory should be
+   read only except for the website admin<p>
+
+2) You need a directory that contains the CGI scripts. The web server must allow execution of scripts in this directory. Recommended is to make a directory in your cgi-bin directory, like <code>/cgi-bin/forum</code>. This directory must be writable by the user that runs the web server.<p>
+
+3) You'll also need a directory where the internal forum datafiles will be. Make sure this directory can NOT be viewed from the outside world! This directory must be writable by the user that runs the web server.<p>
+
+<b>Copy files</b><br>
+Next, you'll need to copy the files:<p>
+
+1) Copy the files from the cgi-bin path to the directory you used for step 3 of Create Directories. Make sure they are executable. The file <code>forum_options.pl</code> *MUST* be writable by the user that runs the web server!<p>
+
+2) Copy the files from the images path to the directoy you used for step 1 of Create Directories. They should be read-only to the user that runs the web server.<p>
+
+3) Now, copy the files from the db path to the directory you used for step 2 of Create Directories. They *MUST* be writable by the user that runs the web server!<p>
+
+<b>Setting it up</b><br>
+Now, once you've done this, it's time to configure the forum. Launch your web browser, and point execute <code>cp.cgi</code> from the cgi-bin directory you've used in step 2 of Copy Files (use the URL, and <b>NOT</b> the directory name!). Log in using:<p>
+
+Username: <code>admin</code><br>
+Password: <code>p@$$w0rd</code><br>
+<p>
+
+Now, you must fill in the proper directories. The forum will check them to make sure they are correct. When this is done, without errors, you can set up the forum.<p>
+
+<p><b>Note: IMMEDIATELY rename the admin account and change the password! It is a SERIOUS security hole if you don't do this!</b><p>
+
+Should you have problems which you can't solve yourself, please post them to the <b>Installation Troubles</b> forum at <a href="http://www.forumax.com">http://www.forumax.com</a> and we'll try to help you out. You can also email <a href="mailto:installation@forumax.com">installation@forumax.com</a>, or ICQ to 48887953<p>
+
+Good luck, and please enjoy ForuMAX!<br>
+The ForuMAX Staff<br>
+<a href="http://www.forumax.com">http://www.forumax.com</a>
+
+</body>

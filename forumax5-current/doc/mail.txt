@@ -1,0 +1,39 @@
+--------------------------------------------------------------------------------
+How to integrate ForuMAX 5.0 Private Messaging with qmail
+--------------------------------------------------------------------------------
+
+WARNING: This is only designed for expert users who are very familiar with
+	 general UNIX system administration, PHP, Perl, MySQL and qmail. This
+	 information is provided as an 'as-is' base and is not supported by
+	 ForuMAX.
+
+1) Install these Perl modules:
+
+- MailTools, at http://search.cpan.org/search?dist=MailTools
+- DBI, at http://search.cpan.org/search?dist=DBI
+- Msql-Mysql-modules, at http://search.cpan.org/search?dist=Msql-Mysql-modules
+- MIME-Base64, at http://www.cpan.org/authors/id/GAAS/MIME-Base64-2.12.tar.gz
+- IO-stringy, at http://www.cpan.org/authors/id/ERYQ/IO-stringy-2.108.tar.gz
+- MIME-tools, at http://cpan.valueclick.com/authors/Eryq/MIME-tools-5.411a.tar.gz
+
+2) Create a virtual domain for the domain you want to handle forum email. You
+   must create an appropriate Mail eXchanger DNS record for this domain too and
+   add it to /var/qmail/control/rcpthosts and /var/qmail/control/virtualdomains.
+   More information at http://cr.yp.to/qmail/faq/incominghost.html#virtual
+
+3) Edit the 'forumax_qmail_gateway.pl' script in this package, and change
+   $DB_HOSTNAME, $DB_DBNAME, $DB_USERNAME, $DB_PASSWORD as needed.
+
+4) Copy the 'forumax_qmail_gateway.pl' script to where you want it to be,
+   for example /var/qmail/bin/forumax_qmail_gateway.pl, and chmod it to
+   700. Chown it to the user which will run the script.
+
+5) Create a .qmail-default file for this domain, which will catch all email
+   sent to this domain. The contents must be
+
+   |/var/qmail/bin/forumax_qmail_gateway.pl
+
+   In which /var/qmail/bin is whatever path you installed the script in.
+
+6) Restart qmail by sending qmail-send a HUP signal. Congrats, it should now
+   work!

@@ -1,0 +1,8 @@
+Queries to do:
+
+INSERT INTO config VALUES ("max_online_timestamp", "");
+INSERT INTO cp_access VALUES (NULL,15,1);
+CREATE TABLE archives (id BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT, name VARCHAR(128) NOT NULL, description MEDIUMTEXT NOT NULL, nofthreads BIGINT NOT NULL, nofposts BIGINT NOT NULL);
+CREATE TABLE archive_threads (id BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT, archiveid BIGINT NOT NULL, title VARCHAR(128) NOT NULL, authorid BIGINT NOT NULL, authorname VARCHAR(128) NOT NULL, icon BIGINT NOT NULL, nofreplies BIGINT not null, archivedby BIGINT NOT NULL, pollid BIGINT NOT NULL);
+CREATE TABLE archive_posts (id BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT, archiveid BIGINT NOT NULL, threadid BIGINT NOT NULL, authorid BIGINT NOT NULL, authorname BIGINT NOT NULL, timestamp DATETIME NOT NULL, flags BIGINT NOT NULL, content MEDIUMTEXT NOT NULL, INDEX (archiveid), INDEX (threadid));
+ALTER TABLE accounts ADD mailpassword_date DATE NOT NULL AFTER reply_backlog;

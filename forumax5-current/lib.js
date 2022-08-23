@@ -1,0 +1,2 @@
+function newwindow(url) { msgWindow=window.open(url ,'_blank','width=450,height=450,toolbar=no,location=no,directories=0,status=no,menubar=no,scrollbars=yes,resizable=no,screenX=10,screenY=10'); }
+function preloadImages() { var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array(); var i,j=d.MM_p.length,a=preloadImages.arguments; for(i=0; i<a.length; i++) if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];} } }

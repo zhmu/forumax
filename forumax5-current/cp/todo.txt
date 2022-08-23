@@ -1,0 +1,17 @@
+DONE: access.php
+DONE: accounts.php -- requires more testing!
+DONE: announce.php
+DONE: archives.php
+DONE: avatars.php -- file permissions on uploaded files!
+DONE: cats.php
+DONE: fields.php
+DONE: forums.php
+DONE: groups.php
+DONE: index.php
+DONE: lib.php
+DONE: masterpwd.php
+DONE: options.php -- could use testing
+DONE: prune.php -- does not delete threads correctly
+DONE: skins.php
+DONE: smilies.php
+BROKEN: update.php -- fix this

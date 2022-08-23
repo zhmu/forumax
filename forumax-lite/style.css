@@ -1,0 +1,145 @@
+body {
+background: #ffffff;
+margin: 0px 4px 0px 4px;
+}
+
+TR.content {
+background: #cfd9ff;
+}
+
+TABLE.heading {
+background: #8CA4FF;
+}
+
+.fnormal {
+font-family : Tahoma, Verdana, Arial; 
+font-size : 12px; 
+font-style : normal; 
+color : #010080; 
+}
+
+.fheading {
+font-family : Tahoma, Verdana, Arial; 
+font-size : 12px; 
+font-weight : bold; 
+color : #F0FFFF;
+background: #2020f0; 
+}
+
+.fsmall {
+font-family : Tahoma, Verdana, Arial; 
+font-size : 10px; 
+color : #010080; 
+}
+
+a.catlink:link {
+font-family: Tahoma, Verdana, Arial;
+font-size : 12px; 
+color: #f0ffff;
+}
+
+a.catlink:hover {
+font-family: Tahoma, Verdana, Arial;
+font-size : 12px; 
+color: #f0ffff;
+text-decoration: none;
+}
+
+a.catlink:visited {
+font-family: Tahoma, Verdana, Arial;
+font-size : 12px; 
+color: #f0ffff;
+text-decoration: underline;
+}
+
+a.catlink:active {
+font-family: Tahoma, Verdana, Arial;
+font-size : 12px; 
+color: #f0ffff;
+}
+
+a.sml:link {
+font-family : Tahoma, Verdana, Arial; 
+font-size : 10px; 
+text-decoration : none; 
+color : #0000ff; 
+}
+
+a.sml:active {
+font-family : Tahoma, Verdana, Arial; 
+font-size : 10px; 
+text-decoration : underline; 
+color : #8CA4FF; 
+}
+
+a.sml:visited {
+font-family : Tahoma, Verdana, Arial; 
+font-size : 10px; 
+text-decoration : none; 
+color : #0000ff; 
+}
+
+a.sml:hover {
+font-family : Tahoma, Verdana, Arial; 
+font-size : 10px; 
+text-decoration : underline; 
+color : #0000ff; 
+}
+
+a:active {
+font-family: Tahoma, Verdana, Arial;
+font-size : 12px; 
+color: #0055ff;
+}
+
+a:link {
+font-family: Tahoma, Verdana, Arial;
+font-size : 12px; 
+color: #0000ff;
+}
+
+a:visited {
+font-family: Tahoma, Verdana, Arial;
+font-size : 12px; 
+color: #0000ff;
+text-decoration: underline;
+}
+
+a:hover {
+font-family: Tahoma, Verdana, Arial;
+font-size : 12px; 
+color: #0000ff;
+text-decoration: none;
+}
+
+a.threadlink:link {
+color: #202080;
+font-family: Tahoma, Verdana, Arial;
+font-size: 12 px;
+font-weight: bold;
+text-decoration: underline;
+}
+
+a.threadlink:visited {
+color: #202080;
+font-family: Tahoma, Verdana, Arial;
+font-size: 12 px;
+font-weight: bold;
+text-decoration: underline;
+}
+
+a.threadlink:hover {
+color: #202080;
+font-family: Tahoma, Verdana, Arial;
+font-size: 12 px;
+font-weight: bold;
+text-decoration: none;
+}
+
+a.threadlink:active {
+color: #202080;
+font-family: Tahoma, Verdana, Arial;
+font-size: 12 px;
+font-weight: bold;
+text-decoration: none;
+}
